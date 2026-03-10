@@ -88,6 +88,9 @@ flex-grow: 1;
             
     }
 
+    .section-support-center-title{
+        font-size: 42px;
+    }
     .footer-links{
         gap: 40px;
     }
