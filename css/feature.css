@@ -164,7 +164,7 @@ width: 23%;
     right: 0px;
 bottom: 70px;
 }
-/* MOBILE */
+
 
 @media (max-width: 768px){
 
@@ -178,8 +178,8 @@ padding:70px 20px;
 }
 
 .features h2{
-font-size:32px;
-margin-bottom:40px;
+font-size: 42px;
+margin-bottom: 40px;
 }
 
 .features-grid{
