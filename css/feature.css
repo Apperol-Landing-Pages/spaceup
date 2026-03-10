@@ -1,0 +1,272 @@
+@import "../assets/font/stylesheet.css";
+
+
+
+.features{
+padding:100px 20px;
+}
+
+.features h2{
+    color: #E4DAD7;
+text-align:center;
+font-size:42px;
+margin-bottom:60px;
+font-weight:700;
+}
+
+.features-grid{
+max-width:1100px;
+margin:auto;
+
+display:grid;
+gap:24px;
+
+grid-template-columns:2fr 1fr 2fr;
+grid-template-rows: 412px 412px;
+
+grid-template-areas:
+"app app security"
+"duplicates support support";
+}
+
+.card{
+
+background:#3a3e57;
+border-radius:22px;
+
+padding:32px;
+
+position:relative;
+overflow:hidden;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.25),
+inset 0 1px 0 rgba(255,255,255,0.05);
+
+transition:transform .25s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+color: #E4DAD7;
+font-size:28px;
+font-weight: 600;
+margin: 0px 0px;
+}
+
+.card p{
+    color: #E4DAD7;
+font-size:18px;
+    font-weight: 400;
+opacity:0.8;
+line-height:1.5;
+    max-width: 330px;
+    margin: 0;
+}
+
+.app{
+grid-area:app;
+}
+
+.security{
+grid-area:security;
+}
+
+.duplicates{
+grid-area:duplicates;
+}
+
+.support{
+grid-area:support;
+}
+
+.card img{
+position:absolute;
+pointer-events:none;
+}
+
+.block1_app_phone{
+    display: none; 
+}
+
+.block1_app_ {
+    display: block;
+width: 41%;
+right: 387px;
+bottom: 0px;
+}
+
+.block1_el1 {
+    
+  width: 45%;
+right: 70px;
+bottom: 155px;  
+}
+
+.block1_el2 {
+
+   width: 45%;
+right: 30px;
+bottom: 36px; 
+}
+
+.security img{
+width: 55%;
+right: 90px;
+bottom: 0px;
+}
+
+.duplicates img{
+width: 55%;
+right: 90px;
+bottom: 0px;
+}
+
+.block4_el1{
+    display: block;
+width:33%;
+    right: 440px;
+bottom: 0px;
+}
+
+.block4_el2 {
+    display: block;
+width: 23%;
+    right: 0px;
+bottom: 70px;
+}
+.block4_el3 {
+    display: block;
+width: 55%;
+    right: 162px;
+bottom: 46px;
+}
+.block4_el3-1 {
+    display: none;
+width: 55%;
+    right: 162px;
+bottom: 46px;
+}
+
+.block4_el1-1{
+    display: none;
+width:33%;
+    right: 440px;
+bottom: 0px;
+}
+
+.block4_el2-1 {
+    display: none;
+width: 23%;
+    right: 0px;
+bottom: 70px;
+}
+/* MOBILE */
+
+@media (max-width: 768px){
+
+.app{
+height:600px;
+}
+
+
+.features{
+padding:70px 20px;
+}
+
+.features h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.features-grid{
+
+grid-template-columns:1fr;
+grid-template-rows: auto;
+
+grid-template-areas:
+"app"
+"security"
+"duplicates"
+"support";
+
+}
+
+.card{
+min-height:400px;
+}
+
+.card img{
+position:absolute;
+}
+    
+.block1_app_phone {
+    display: block;
+width: 70%;
+right: 55px;
+bottom: 0px;
+}
+
+.block1_app_{
+        display: none;
+    }    
+.block1_el1 {
+    
+  width: 70%;
+right: 70px;
+bottom: 427px;  
+}
+
+.block1_el2 {
+   width: 70%;
+right: 30px;
+bottom: 320px; 
+}
+    .security img{
+width: 70%;
+right: 50px;
+bottom: 0px;
+}
+
+.duplicates img{
+width: 70%;
+right: 50px;
+bottom: 0px;
+}
+
+.block4_el1{
+display: none;
+}
+
+.block4_el2 {
+display: none;
+}
+
+.block4_el1-1{
+    display: block;
+width:23%;
+    right: 211px;
+bottom: 0px;
+}
+
+.block4_el2-1 {
+    display: block;
+width: 33%;
+    right: 40px;
+bottom: 0px;
+}
+    
+.block4_el3 {
+display: none;
+}
+
+.block4_el3-1{
+    display: block;
+    width: 77%;
+right: 44px;
+bottom: 77px;
+    }    
+}

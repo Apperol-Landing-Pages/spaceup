@@ -1,0 +1,86 @@
+@import "../assets/font/stylesheet.css";
+
+.main {
+    padding: 60px 0 0px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #242535 0%, #0F172A 100%);
+}
+
+.content-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    display: flex;
+    text-align: center;
+    line-height: 96%;
+    font-size: 82px;
+    font-weight: 600;
+    margin: 20px 0px 20px;
+    color: #DDD7E4;
+}
+
+.main-button {
+  display: flex;
+  font-family: 'Outfit';
+  justify-content: center;
+  align-items: center;
+  width: 184px;
+  height: 46px;
+  padding: 12px 24px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 8px;
+  background: #8A30FF;
+  margin: 56px 0;
+}
+
+.main-gradient {
+   position: absolute;
+    bottom: -800px;
+    left: 50%;
+    transform: translateX(-50%);   
+    width: 1200px;
+    height: 800px;
+    background: linear-gradient(126deg, #FF44E3 43.63%, #4CA9FF 66.12%);
+    filter: blur(180px);
+    z-index: 0;
+}
+
+.main-phone {
+    width: 320px;
+    z-index: 1;
+}
+
+@media (max-width: 764px) {
+    .main {
+    padding: 35px 0 0px;
+}
+
+    .main-gradient {
+    position: absolute;
+    width: 360px;
+    height: 444px;
+    bottom: -200px; 
+    }
+
+    .main-buttons {
+        width: 100%; 
+    }
+    .main-title{
+        font-size: 64px;
+    }
+}
