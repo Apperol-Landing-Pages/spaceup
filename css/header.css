@@ -118,7 +118,7 @@ header {
 }
 
 .mobile-logo {
-    width: 46px;
+    width: 120px;
 }
 
 .menu-close {
@@ -133,7 +133,7 @@ header {
 }
 
 .mobile-menu-links {
-    margin-top: 200px;
+    margin: 150px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
